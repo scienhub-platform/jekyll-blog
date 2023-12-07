@@ -1,0 +1,154 @@
+# Name of website
+title: Blog
+
+baseurl: /blog
+
+remote_theme: daattali/beautiful-jekyll@6.0.1
+
+# Your name to show in the footer
+# author: ScienHub
+
+navbar-links:
+  ScienHub: "../"
+  Login: "../auth/login"
+  Templates: "../templates"
+  # Resources:
+  #   - Login: "../auth/login"
+  #   - Templates: "../templates"
+  # Author's home: "https://deanattali.com"
+
+avatar: "/assets/img/avatar-icon.jpg"
+
+round-avatar: true
+social-network-links:
+  email: "contact@scienhub.com"
+  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  github: scienhub-platform
+  twitter: scienhub
+
+# If you want your website to generate an RSS feed, provide a description
+# The URL for the feed will be https://<your_website>/feed.xml
+# rss-description: ScienHub blog
+
+page:
+  head-extra:
+    a.html
+
+###########################
+# --- General options --- #
+###########################
+
+# Select which social network share links to show in posts
+# share-links-active:
+#   twitter: true
+
+# How to display the link to your website in the footer
+# Remove this if you don't want a link in the footer
+url-pretty: "scienhub.com"
+
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+excerpt_length: 50
+
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
+
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
+
+# Add a search button to the navbar
+post_search: true
+
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
+
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+navbar-var-length: false
+
+# The keywords to associate with your website, for SEO purposes
+#keywords: "my,list,of,keywords"
+
+######################################
+# --- Colours / background image --- #
+######################################
+
+# Personalize the colours in your website. Colour values can be any valid CSS colour
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
+
+# Alternatively, the navbar, footer, and page background can be set to an image
+# instead of colour
+
+# navbar-img: "/assets/img/bgimage.png"
+# footer-img: "/assets/img/bgimage.png"
+# page-img: "/assets/img/bgimage.png"
+
+# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
+#mobile-theme-col: "#0085A1"
+
+# For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
+#site-css:
+#  - "/assets/css/custom-styles.css"
+
+# If you have common JavaScript files that should be included in every page, list them here
+#site-js:
+#  - "/assets/js/custom-script.js"
+
+gtag: "G-R9DBHZP0D2"
+disqus: "scienhub"
+
+
+date_format: "%B %-d, %Y"
+
+# Output options (more information on Jekyll's site)
+timezone: "America/Toronto"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
+kramdown:
+  input: GFM
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+

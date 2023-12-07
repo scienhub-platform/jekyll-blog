@@ -1,0 +1,43 @@
+p {
+    margin: 1rem 0;
+}
+figure > figcaption {
+    text-align: center;
+    color:#494949;
+    font-family: Arial (sans-serif);
+    font-size: 0.9em;
+}
+
+figure > img {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.6rem;
+    margin-top: 1.8rem;
+}
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: -0.3rem;
+}
+h4 {
+    font-size: 1.1rem;
+    margin-bottom: -1.0rem;
+}
+h1, h2, h3, h4 {
+    font-family: "Times New Roman", Times, serif;
+    color: #161A30;
+}
+
+.intro-header .page-heading h1 {
+    font-size: 2rem;
+}
+.intro-header .post-heading h1 {
+    font-size: 2rem;
+}
